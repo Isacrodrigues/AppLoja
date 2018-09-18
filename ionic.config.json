@@ -1,0 +1,8 @@
+{
+  "name": "loja",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "c1d3d9ca"
+}

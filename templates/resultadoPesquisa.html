@@ -1,0 +1,24 @@
+<ion-view title="resultadoPesquisa" hide-nav-bar="true" id="page3">
+  <ion-content padding="false" class="manual-ios-statusbar-padding">
+    <form id="resultadoPesquisa-form6" class="list">
+      <label class="item item-input" id="resultadoPesquisa-search3">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="">
+      </label>
+    </form>
+    <div id="resultadoPesquisa-container2" class="creator-container">
+    	<DIV CLASS="row">
+			<div class=col-md-8>
+				{% for produto.ocjects.all() in produtos %}	
+				    <div class=produto >
+						<h2>{{ Produto.nome }}<a href=""></a></h2>
+						<img src="">
+						<p>preço: R${{ Produto.preco }}</p>
+						<p>{{ Produto.decricao }}</p>
+					</div>
+				{% endfor %}	
+			</div>	
+		</DIV>
+    </div>
+  </ion-content>
+</ion-view>
